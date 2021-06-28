@@ -3,7 +3,7 @@
 
 # Makefile
 Makefile
-**.make
+/**.make
 
 # CodeLite
 /.codelite
@@ -17,5 +17,5 @@ Makefile
 
 # MsBuild
 /.vs/
-*.sln
-*.vcxproj
+/**.sln
+/**.vcxproj
