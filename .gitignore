@@ -1,0 +1,21 @@
+/Build/*
+/Tools/*
+
+# Makefile
+Makefile
+**.make
+
+# CodeLite
+/.codelite
+/**.workspace
+/**.project
+/**.mk
+/tags
+/.txt
+/compile_flags.txt
+/*.batch_build
+
+# MsBuild
+/.vs/
+*.sln
+*.vcxproj
