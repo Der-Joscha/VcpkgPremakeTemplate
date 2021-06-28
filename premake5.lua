@@ -24,29 +24,56 @@ workspace "TestWorkspace"
 		
 		targetdir ("%{wks.location}/Build/Binary/" .. outputdir .. "/%{prj.name}")
 		objdir ("%{wks.location}/Build/Object/" .. outputdir .. "/%{prj.name}")
-
-		pchheader "PCH.hpp"
-		pchsource "Source/PCH.cpp"
-
-
-		includedirs {
-			"%{wks.location}/Tools/vcpkg/installed/x64-windows/include",
-			"%{wks.location}/Tools/vcpkg/installed/x64-windows-static/include",
-		}
+		
+		-- TODO: Fix PCH on linux
+		filter "system:windows"
+			pchheader "%{wks.location}/PCH.hpp"
+			pchsource "%{wks.location}/Source/PCH.cpp"
+		filter {}
 		
 		links {
 			"glfw3",
 		}
 		
-		filter "configurations:Debug"
+		-- WINDOWS
+		filter "system:windows"
+			includedirs {
+				"%{wks.location}/Tools/vcpkg/installed/x64-windows/include",
+				"%{wks.location}/Tools/vcpkg/installed/x64-windows-static/include",
+			}
+		
+	
+		
+		filter { "system:windows", "configurations:Debug" }
 			libdirs {
 				"%{wks.location}/Tools/vcpkg/installed/x64-windows/lib",
 				"%{wks.location}/Tools/vcpkg/installed/x64-windows-static/lib",
 			}
 		
 		
-		filter "configurations:Release"
+		filter { "system:windows", "configurations:Release" }
 			libdirs {
 				"%{wks.location}/Tools/vcpkg/installed/x64-windows/debug/lib",
 				"%{wks.location}/Tools/vcpkg/installed/x64-windows-static/debug/lib",
+			}
+		
+		-- LINUX
+		filter "system:linux"
+			includedirs {
+				"%{wks.location}/Tools/vcpkg/installed/x64-linux/include",
+				"%{wks.location}/Tools/vcpkg/installed/x64-linux-static/include",
+			}
+			
+			links { "dl", "pthread", "X11" }
+		
+		filter { "system:linux", "configurations:Debug" }
+			libdirs {
+				"%{wks.location}/Tools/vcpkg/installed/x64-linux/lib",
+				"%{wks.location}/Tools/vcpkg/installed/x64-linux-static/lib",
+			}
+		
+		filter { "system:linux", "configurations:Release" }
+			libdirs {
+				"%{wks.location}/Tools/vcpkg/installed/x64-linux/debug/lib",
+				"%{wks.location}/Tools/vcpkg/installed/x64-linux-static/debug/lib",
 			}

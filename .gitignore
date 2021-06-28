@@ -11,7 +11,7 @@ Makefile
 /**.project
 /**.mk
 /tags
-/.txt
+/*.txt
 /compile_flags.txt
 /*.batch_build
 
