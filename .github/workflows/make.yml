@@ -1,4 +1,4 @@
-name: MSBuild
+name: Make
 
 on: [push]
 
@@ -13,13 +13,13 @@ env:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
-
-    - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v1
+    
+    - name: Setup Make
+      run: chmod +x ./Script/Setup.sh
     
     - name: Setup Premake
       # You may pin to the exact commit or the version.
@@ -27,10 +27,8 @@ jobs:
       uses: abel0b/setup-premake@v1
 
     - name: Setup Project
-      run: ./Script/Setup.bat
+      run: ./Script/Setup.sh
 
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      # Add additional options to the MSBuild command line here (like platform or verbosity level).
-      # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
-      run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} ${{env.SOLUTION_FILE_PATH}}
+      run: make all
