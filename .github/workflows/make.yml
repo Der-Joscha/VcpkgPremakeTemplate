@@ -21,6 +21,9 @@ jobs:
     - name: Setup Make
       run: chmod +x ./Script/Setup.sh
     
+    - name: Install required dependencies
+       run: sudo apt install libxinerama-dev libxcursor-dev xorg-dev libglu1-mesa-dev 
+    
     - name: Setup Premake
       # You may pin to the exact commit or the version.
       # uses: abel0b/setup-premake@8c96e76d62db4c5cbe7c16d7e5b80183534374c7
