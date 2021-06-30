@@ -22,7 +22,7 @@ jobs:
       run: chmod +x ./Script/Setup.sh
     
     - name: Install required dependencies
-       run: sudo apt install libxinerama-dev libxcursor-dev xorg-dev libglu1-mesa-dev 
+      run: sudo apt install libxinerama-dev libxcursor-dev xorg-dev libglu1-mesa-dev 
     
     - name: Setup Premake
       # You may pin to the exact commit or the version.
