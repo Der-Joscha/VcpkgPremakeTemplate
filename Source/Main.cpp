@@ -17,7 +17,7 @@ int main()
 	}
 
     auto cnt = 0;
-    auto mond = glfwGetMonitors(&cnt);
+    const auto mond = glfwGetMonitors(&cnt);
 
     for(auto i = 0; i < cnt; ++i)
 	{

@@ -27,8 +27,8 @@ workspace "TestWorkspace"
 		
 		-- TODO: Fix PCH on linux
 		filter "system:windows"
-			pchheader "%{wks.location}/PCH.hpp"
-			pchsource "%{wks.location}/Source/PCH.cpp"
+			pchheader "PCH.hpp"
+			pchsource "Source/PCH.cpp"
 		filter {}
 		
 		links {
