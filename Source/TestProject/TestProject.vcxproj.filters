@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{16CF2D0E-82E3-55BF-4B65-F91EB73852F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\vcpkg">
+      <UniqueIdentifier>{C03CC0A6-2CF2-389C-B5E6-3273219B2FA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\vcpkg\buildtrees">
+      <UniqueIdentifier>{22696246-0E63-8B98-F7CF-21A9E368F104}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\vcpkg\buildtrees\detect_compiler">
+      <UniqueIdentifier>{E40948BC-D05B-1FAC-B97A-5CBCA56B3895}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\vcpkg\buildtrees\detect_compiler\x64-windows-static-rel">
+      <UniqueIdentifier>{926D9E40-FE35-6CC4-C7C6-74D6334E9CFF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\vcpkg\buildtrees\detect_compiler\x64-windows-static-rel\CMakeFiles">
+      <UniqueIdentifier>{9503F3A1-8130-3FD3-AA11-E2E3969D92A3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\vcpkg\buildtrees\detect_compiler\x64-windows-static-rel\CMakeFiles\3.20.2">
+      <UniqueIdentifier>{E76DA776-5359-BAD7-5C32-C150C89CB715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\vcpkg\buildtrees\detect_compiler\x64-windows-static-rel\CMakeFiles\3.20.2\CompilerIdCXX">
+      <UniqueIdentifier>{31A3359C-9D1B-AAE8-6690-BBFDD2C7C5AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\vcpkg\docs">
+      <UniqueIdentifier>{B86FAF97-A468-CEE9-CD9A-B36EB9F2ADF5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\vcpkg\docs\examples">
+      <UniqueIdentifier>{66EC6AC1-D2AE-9E4B-1B5F-2DD887607729}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\vcpkg\docs\examples\vcpkg_android_example_cmake">
+      <UniqueIdentifier>{9B2D2947-074A-1B38-D021-88A53CFD84F9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\vcpkg\docs\examples\vcpkg_android_example_cmake_script">
+      <UniqueIdentifier>{CF07AEC1-BB72-6ECD-648E-D33250D831B0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\vcpkg\downloads">
+      <UniqueIdentifier>{1AD5A556-8641-6151-4F35-F9AEBB6083B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\vcpkg\downloads\tools">
+      <UniqueIdentifier>{3A15707A-A622-9E60-2F09-9A4B9B156A17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\vcpkg\downloads\tools\cmake-3.20.2-windows">
+      <UniqueIdentifier>{125EE823-FE06-5053-279D-6BD213A56A94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\vcpkg\downloads\tools\cmake-3.20.2-windows\cmake-3.20.2-windows-i386">
+      <UniqueIdentifier>{01A36693-EDBA-7148-568A-510D42C1547B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\vcpkg\downloads\tools\cmake-3.20.2-windows\cmake-3.20.2-windows-i386\share">
+      <UniqueIdentifier>{634A8D1F-4FA3-FDA2-789D-DF3C6455A3A0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\vcpkg\downloads\tools\cmake-3.20.2-windows\cmake-3.20.2-windows-i386\share\cmake-3.20">
+      <UniqueIdentifier>{63D00CBA-CF3D-F0FF-58EC-5B8BC4585947}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\vcpkg\downloads\tools\cmake-3.20.2-windows\cmake-3.20.2-windows-i386\share\cmake-3.20\Modules">
+      <UniqueIdentifier>{2B1097BF-9729-1759-2051-E90A8C691218}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\vcpkg\downloads\tools\cmake-3.20.2-windows\cmake-3.20.2-windows-i386\share\cmake-3.20\Modules\CheckIPOSupported">
+      <UniqueIdentifier>{260FBB21-928B-5A0B-5B2B-21C8C766438B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PCH.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Tools\vcpkg\buildtrees\detect_compiler\x64-windows-static-rel\CMakeFiles\3.20.2\CompilerIdCXX\CMakeCXXCompilerId.cpp">
+      <Filter>Tools\vcpkg\buildtrees\detect_compiler\x64-windows-static-rel\CMakeFiles\3.20.2\CompilerIdCXX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tools\vcpkg\docs\examples\vcpkg_android_example_cmake\my_lib.cpp">
+      <Filter>Tools\vcpkg\docs\examples\vcpkg_android_example_cmake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tools\vcpkg\docs\examples\vcpkg_android_example_cmake_script\my_lib.cpp">
+      <Filter>Tools\vcpkg\docs\examples\vcpkg_android_example_cmake_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tools\vcpkg\downloads\tools\cmake-3.20.2-windows\cmake-3.20.2-windows-i386\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp">
+      <Filter>Tools\vcpkg\downloads\tools\cmake-3.20.2-windows\cmake-3.20.2-windows-i386\share\cmake-3.20\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tools\vcpkg\downloads\tools\cmake-3.20.2-windows\cmake-3.20.2-windows-i386\share\cmake-3.20\Modules\CheckIPOSupported\foo.cpp">
+      <Filter>Tools\vcpkg\downloads\tools\cmake-3.20.2-windows\cmake-3.20.2-windows-i386\share\cmake-3.20\Modules\CheckIPOSupported</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tools\vcpkg\downloads\tools\cmake-3.20.2-windows\cmake-3.20.2-windows-i386\share\cmake-3.20\Modules\CheckIPOSupported\main.cpp">
+      <Filter>Tools\vcpkg\downloads\tools\cmake-3.20.2-windows\cmake-3.20.2-windows-i386\share\cmake-3.20\Modules\CheckIPOSupported</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="PCH.cpp" />
+  </ItemGroup>
+</Project>

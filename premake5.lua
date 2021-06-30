@@ -13,13 +13,14 @@ workspace "TestWorkspace"
 	startproject "TestProject"
 
 	project "TestProject"
+		location "Source/TestProject"
 		kind "ConsoleApp"
 		language "c++"
 		cppdialect "c++17"
 		
 		files {
-			"Source/**.cpp",
-			"Source/**.hpp"
+			"%{prj.location}/**.cpp",
+			"%{prj.location}/**.hpp"
 		}
 		
 		targetdir ("%{wks.location}/Build/Binary/" .. outputdir .. "/%{prj.name}")
@@ -28,7 +29,7 @@ workspace "TestWorkspace"
 		-- TODO: Fix PCH on linux
 		filter "system:windows"
 			pchheader "PCH.hpp"
-			pchsource "Source/PCH.cpp"
+			pchsource "%{prj.location}/PCH.cpp"
 		filter {}
 		
 		links {
